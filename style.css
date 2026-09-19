@@ -131,6 +131,16 @@ label:hover{
 	cursor: pointer;
 }
 
+.window-background{
+	left: 0;
+	top: 0;
+	display: none;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	width: 100vw;
+	height: 110%;
+}
+
 .window{
 	display: none;
 	background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(1, 0, 69, 0.5)), url("chat_bg.png");
@@ -140,6 +150,32 @@ label:hover{
 	min-height: 85%;
 	max-height:200px;
 	width: 220px;
+}
+
+#changelog-btn{
+	border: none;
+	background-color: rgb(110, 0, 6);
+	color: white;
+	cursor: pointer;
+}
+
+.changelog-window{
+	--window-width: 300px;
+	width: var(--window-width);
+	left: calc(50vw - var(--window-width)/2);
+	position: absolute;
+	margin: auto;
+	z-index: 100;
+	h2{
+		text-align: center;
+	};
+	h2, h3{
+		background-color: rgb(110, 0, 6);
+	};
+	li{
+		background-color: black;
+		list-style-image: url(save_point.gif);
+	}
 }
 
 .options-window{

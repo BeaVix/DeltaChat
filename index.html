@@ -3,7 +3,7 @@
 	<head>
 		<title> Chat!</title>
 		<link href="style.css" rel="stylesheet"/>
-		<script type="module" crossorigin src="/DeltaChat/assets/index-BM4c-fO0.js"></script>
+		<script type="module" crossorigin src="/DeltaChat/assets/index-BYyTcoy4.js"></script>
 	</head>
 	<body>
 		<header>
@@ -26,10 +26,13 @@
 					
 				<div class="input-group">
 					<label for="map">Map</label>
-					<select name="map" id ="map">
-						<option value="castletown" selected>Castletown</option>
-						<option value="cafe">Cafe</option>
-					</select>
+					<div>
+						<select name="map" id ="map">
+							<option value="castletown" selected>Castletown</option>
+							<option value="cafe">Cafe</option>
+						</select>
+						<p style="display: inline;">Players: <span id="online-players">Loading...</span></p>
+					</div>
 				</div>
 				<label for="character-grid">Avatar</label>
 				<div style="display: flex; justify-content: center; gap: 5px; padding: 5px;">
@@ -145,5 +148,5 @@
 			</div>
 		</div>
 		<div class="window-background"></div>
-	</body>
+	</body>
 </html>
